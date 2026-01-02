@@ -1,39 +1,41 @@
-📊 生產一組 - 效率日誌入口 (Efficiency Log Portal)
-"不只是入口，更是視覺享受。" 一個極簡、現代化且具備響應式設計的儀表板入口頁面，採用「溫暖莫蘭迪」色調與 Glassmorphism（毛玻璃）風格設計。
+效率日誌入口 (Efficiency Log Portal)
+一個結合溫暖莫蘭迪色調與現代毛玻璃美學的效率日誌入口頁面，為您的生產力工具提供優雅的起點。
 
 📖 專案簡介
-這個專案旨在為團隊提供一個美觀的「效率日誌」訪問入口。它解決了傳統後台連結枯燥乏味的問題，透過高質感的 CSS3 動畫 與 毛玻璃特效，提升使用者在進入數據報表前的視覺體驗。該頁面目前被設計為導向至 Google Apps Script (GAS) 部署的 Web App，但可輕鬆擴展為多功能的導航中心。
+本專案是一個輕量級、高質感的單頁式網站 (Single Page Application)，旨在作為「生產一組」的效率日誌入口。它解決了傳統連結列表枯燥乏味的問題，透過動態背景、流暢的微互動動畫以及智慧型標題，提升使用者的訪問體驗與儀式感。
 
-✨ 主要功能 (Key Features)
-這不僅僅是一個靜態頁面，它包含許多細膩的 UI/UX 設計細節：
+適用於：個人儀表板 (Dashboard)、團隊工具入口、Notion 或 Google Apps Script Web App 的落地頁面。
 
-🎨 溫暖莫蘭迪色系 (Warm Morandi Palette)：
+✨ 主要功能 (Features)
+🎨 絕美毛玻璃特效 (Glassmorphism UI)：
 
-使用了精心挑選的 CSS 變數（如奶茶色、乾燥玫瑰、暖灰），營造出舒適、不刺眼的辦公氛圍。
+運用 backdrop-filter: blur 與半透明圖層，打造深邃的層次感。
 
-💎 極致毛玻璃特效 (Glassmorphism)：
+懸停 (Hover) 卡片時具有細膩的上浮與光影變化效果。
 
-利用 backdrop-filter: blur(12px) 與半透明邊框，創造出漂浮在背景之上的磨砂玻璃質感卡片。
+🌫️ 莫蘭迪動態氛圍：
 
-具備精細的陰影處理 (box-shadow)，增加層次感。
+背景採用溫暖的莫蘭迪漸層色 (奶茶色、乾燥玫瑰、暖灰)，並搭配 CSS 動畫 gradientMove 實現柔和流動。
 
-🌊 動態沈浸體驗：
+漂浮的柔光圓球 (Blobs) 增加了視覺的豐富度與有機感。
 
-背景流動：CSS animation 讓背景漸層緩慢流動，賦予畫面生命力。
+⌨️ 打字機開場動畫：
 
-漂浮裝飾：背景中的 .blob 圓球元素增加了視覺深度。
+頁面載入時，標題文字以打字機風格逐字呈現，並附帶閃爍游標，抓住使用者注意力。
 
-互動回饋：卡片具備懸停 (Hover) 上浮與亮度變化效果，提供明確的互動暗示。
+👻 智慧分頁標題 (Smart Title)：
 
-📱 響應式設計 (Mobile Responsive)：
+當使用者切換到其他分頁時，網頁標題會自動變更為 ( ˘•ω•˘ ) 等你回來...，增加趣味性與回訪率。
 
-針對手機端 (Max-width: 480px) 進行了字體與間距的優化，確保在任何裝置上都能完美呈現。
+📱 響應式設計 (Responsive)：
+
+完美適配桌面與行動裝置，在手機上也能保持優雅的排版。
 
 🛠️ 技術架構 (Tech Stack)
-Core: HTML5
+Core: Semantic HTML5
 
-Styling: CSS3 (Variables, Flexbox, Animations, Backdrop Filter)
+Styling: CSS3 (CSS Variables, Flexbox, Keyframe Animations, Media Queries)
 
-Integration Target: Google Apps Script Web App (可替換)
+Logic: Vanilla JavaScript (ES6+)
 
-文件生成於 2026年，由 README Alchemist 製作。
+External Dependencies: None (零依賴，開箱即用)
