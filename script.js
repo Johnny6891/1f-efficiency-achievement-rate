@@ -5,7 +5,7 @@
 
 // 【新增】 GAS API 設定
 // 請在此填入上方 Part 1 部署後的 Web App URL
-const GAS_API_URL = "https://script.google.com/a/macros/dgstand.com/s/AKfycbyeDao7zNeomdusgymdIIVNmllqUBx9EMDiLM8LEcufZFuzkkeHDXt3f0WJfJCugKc2EA/exec";
+const GAS_API_URL = "https://script.google.com/macros/s/AKfycbyeDao7zNeomdusgymdIIVNmllqUBx9EMDiLM8LEcufZFuzkkeHDXt3f0WJfJCugKc2EA/exec";
 
 // 1. 打字機特效設定
 const textToType = "生產一組"; // 這裡修改標題文字
