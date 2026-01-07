@@ -10,6 +10,9 @@
     --glass-border: rgba(255, 255, 255, 0.4);
     --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
     --cursor-color: #ffffff;      /* 游標顏色 */
+    /* 【新增】 數據強調色 */
+    --accent-color: #D9534F;      
+    --success-color: #5CB85C;
 }
 
 * {
@@ -111,7 +114,7 @@ h1 {
     position: relative;
     overflow: hidden;
     
-    /* 【新增】 增加卡片下方的距離，避免兩張卡片黏在一起 */
+    /* 【修改】 增加卡片下方的距離，避免兩張卡片黏在一起 */
     margin-bottom: 25px;
 
     /* 初始狀態稍微往下移，配合進場動畫 */
@@ -148,7 +151,44 @@ h1 {
 }
 
 /* =========================================
-   5. 動畫定義
+   【新增】 5. 數據預覽樣式
+   ========================================= */
+.data-preview {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #555;
+    background: rgba(255,255,255,0.3);
+    padding: 8px 12px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.loading {
+    font-style: italic;
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.data-highlight {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1rem;
+    margin: 0 4px;
+}
+
+.data-tag {
+    font-size: 0.8rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: white;
+    margin-left: 5px;
+}
+
+.tag-success { background-color: var(--success-color); }
+.tag-urgent { background-color: var(--accent-color); }
+
+/* =========================================
+   6. 動畫定義 (原編號為 5，順延)
    ========================================= */
 @keyframes gradientMove {
     0% { background-position: 0% 50%; }
@@ -174,7 +214,7 @@ h1 {
 }
 
 /* =========================================
-   6. 進階動畫控制 (讓卡片依序出現)
+   7. 進階動畫控制 (原編號為 6，順延)
    ========================================= */
 
 /* 第一張卡片延遲 0.5s 出現 (等待標題打字開頭) */
